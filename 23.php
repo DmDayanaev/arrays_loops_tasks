@@ -20,7 +20,7 @@
 
 <?php
 $a = $_POST['a'];
-if (!is_numeric ($a)) {
+if (!is_numeric ($a) && isset($_POST['a'])) {
     echo "Введите число";
 } else {
     $arr = str_split($a);
